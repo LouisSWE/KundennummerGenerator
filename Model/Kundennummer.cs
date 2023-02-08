@@ -25,8 +25,14 @@ public class Kundennummer
 
   #region Public Properties
 
+  /// <summary>
+  /// The id.
+  /// </summary>
   public Guid Id { get; set; }
 
+  /// <summary>
+  /// Die Kundennummer.
+  /// </summary>
   public String KundenNummer { get; set; }
 
 

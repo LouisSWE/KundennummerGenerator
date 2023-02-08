@@ -16,7 +16,7 @@ public class KundenummerStore
   #region Constructors
 
   /// <summary>
-  /// Initialisiert eine neue Instanz vom KundennummerStore. 
+  /// Initialisiert eine neue Instanz vom KundennummerStore.
   /// </summary>
   public KundenummerStore()
   {
