@@ -30,17 +30,22 @@ namespace KundenummerGenerator
     /// </summary>
     /// <param name="value"></param>
     private void CreateandAddKundennummer(String value)
+
     {
       //Ist der String für die Kundennummer
       String nummer = String.Empty;
+
       //Ist eine Variable um zufällige zahlen in ein Array zu befüllen
       Int32 w;
+
       //Behinhaltet die zufälligen Zahlen von den Stellen 3-8 in vorm eines Strings
       String stellen3Bis8 = String.Empty;
 
       var quersumme = 0;
+
       //Ist das Array was die zufälligen Zahlen beinhaltet
       var stellen3Bis8Rnd = new Int32[7];
+
       //Fügt 7 zufällig generierte Zahlen in ein Array hinzu und erstellt die Quersumme dieser zahlen.
       for (var i = 0; i < 7; i++)
       {
