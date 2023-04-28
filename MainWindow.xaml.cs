@@ -62,8 +62,22 @@ namespace KundenummerGenerator
         stellen3Bis8 += item.ToString();
       }
 
-      //String der die Kundennummer darstellt
-      nummer = $"KD{stellen3Bis8}{quersumme}";
+      if (quersumme < 10)
+      {
+        //quersumme zum string
+        var s = quersumme.ToString();
+
+        //quersumme als string um eine 0 vor die eigentliche quersumme zu machen wenn die quersumme nicht 2 stellig ist
+        String quersummes = s.Insert(0,"0");
+
+        //String der die Kundennummer darstellt
+        nummer = $"KD{stellen3Bis8}{quersummes}";
+      }
+      else
+      {
+        //String der die Kundennummer darstellt
+        nummer = $"KD{stellen3Bis8}{quersumme}";
+      }
 
       Kundennummer kundennummer = kundenummerStore.AddKundennummer(new Kundennummer(Guid.NewGuid(), nummer));
       dataGrid.Items.Refresh();
